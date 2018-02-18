@@ -1,15 +1,14 @@
-/*Estilos generales*/
-
+/*GENERAL styles*/
 *{
 	box-sizing: border-box;
 }
-body{
+body {
 	background-color: #FFFEFA;
 	margin: 0;
 	padding: 0;
 	font-family: 'Gabriela', serif;
 }
-main{
+main {
 	padding-top: 50px;
 	box-sizing: border-box;
 	display: flex;
@@ -20,10 +19,10 @@ main{
 	height: 70px;
 }
 @font-face {
-font-family: 'American Typewriter Bold';
-font-style: normal;
-font-weight: normal;
-src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold.woff') format('woff');
+	font-family: 'American Typewriter Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold.woff') format('woff');
 }
 
 /*Estilos generales de la sección de desplegables*/
@@ -40,9 +39,9 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 }
 .title-container:hover {
-  border-top-color: #5A392B;
-  background: #5A392B;
-  color: #ccc;
+	border-top-color: #5A392B;
+	background: #5A392B;
+	color: #ccc;
 }
 .title-container:active {
 	border-top-color: #5A392B;
@@ -92,8 +91,8 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 }
 .buttons-save-general:hover {
 	background: #7DBEA5;
-  box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
-  outline-offset: 80px;
+	box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
+	outline-offset: 80px;
 	color: #fff;
 	font-weight: bold;
 	border-color:#7DBEA5;
@@ -106,16 +105,14 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	display: block;
 }
 .shown{
-	/*visibility: visible;*/
 	display: block;
 }
 .hidden{
-	/*visibility: hidden;*/
 	display: none;
 }
 /*Fin estilos generales*/
 /*Header logo formulario*/
-.headlog{
+.headlog {
 	height: 70px;
 	min-width: 60px;
 	display: flex;
@@ -126,14 +123,14 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	display: flex;
 	flex-direction: row;
 }
-.machinelog{
+.machinelog, .machinelog-contact{
 	margin-top: 5px;
 	display: block;
 	margin-left: 5px;
 	max-width: 60px;
 	width: 100%;
 }
-.letterslog{
+.letterslog {
 	margin top: 10px;
 	margin-left: 5px;
 	margin-right: 10px;
@@ -141,37 +138,37 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	width: 100%;
 	margin-top: 10px;
 }
-.icons{
+.icons {
 	height: 30px;
-  width: 30px;
-  margin-left: 5px;
-  background-size: cover;
-  align-items: flex-end;
-  text-align: center;
-  background-color: transparent;
-  box-sizing: border-box;
-  border-style: none;
-  cursor: pointer;
+	width: 30px;
+	margin-left: 5px;
+	background-size: cover;
+	align-items: flex-end;
+	text-align: center;
+	background-color: transparent;
+	box-sizing: border-box;
+	border-style: none;
+	cursor: pointer;
 }
 .iconsprev{
 	height: 30px;
-  width: 30px;
-  margin-left: 5px;
-  background-size: cover;
-  align-items: flex-end;
-  text-align: center;
-  background-color: transparent;
-  box-sizing: border-box;
-  border-style: none;
-  cursor: pointer
+	width: 30px;
+	margin-left: 5px;
+	background-size: cover;
+	align-items: flex-end;
+	text-align: center;
+	background-color: transparent;
+	box-sizing: border-box;
+	border-style: none;
+	cursor: pointer
 }
-/*header parte marta*/
-.containericonos{
+/*header*/
+.containericonos {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
-.cajaiconsprev{
+.cajaiconsprev {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -181,32 +178,32 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	margin-top: 10px;
 	margin-right: 17px;
 }
-#btnview{
+#btnview {
 	background-image: url("../images/btnfile2.png");
 }
-#btnshare{
+#btnshare {
 	background-image: url("../images/btnshare2.png");
 	display: none;
 }
-#btnprint{
+#btnprint {
 	background-image: url("../images/btnprint2.png");
 	display: none;
 }
-#btndownload{
+#btndownload {
 	background-image: url("../images/btndownload2.png");
 	display: none;
 }
-#btnshareprev{
+#btnshareprev {
 	background-image: url("../images/btnshare3.png");
 	display: block;
 }
-#btnprintprev{
+#btnprintprev {
 	background-image: url("../images/btnprint3.png");
 	display: block;
 }
-#btndownloadprev{
+#btndownloadprev {
 	background-image: url("../images/btndown.png");
-		display: block;
+	display: block;
 }
 header{
 	width: 100%;
@@ -215,11 +212,11 @@ header{
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+	align-items: center;
+	flex-wrap: wrap;
 	padding-top: 0px;
 	margin-top: 0px;
-  z-index: 99;
+	z-index: 99;
 	padding-right: 10px;
 }
 #header-fondo {
@@ -242,7 +239,7 @@ header{
 	border: none;
 }
 /* cargar imagen*/
-.thumb{
+.thumb {
 	border: 1px solid #000;
 	margin: 10px 5px 0 0;
 	width: 200px;
@@ -257,27 +254,27 @@ header{
 	text-align: center;
 	padding: 4%;
 }
-.containerinfo{
+.containerinfo {
 	display: flex;
 	flex-direction: column;
 }
-.containerfoto{
+.containerfoto {
 	display: flex;
 	justify-content: center;
 }
-.name{
+.name {
 	font-size: 20px;
 	font-weight: bold;
 }
-.datosprin{
+.datosprin {
 	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.foto{
+.foto {
 	width: 200px;
-  height: 200px;
+	height: 200px;
 	border-radius: 100px;
 	margin-top: 40px;
 	-webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
@@ -319,10 +316,10 @@ header{
 	-webkit-box-shadow: 8px 14px 42px 1px #3d3d29;
 }
 /*ventana previsualizar*/
-.textcrea{
+.textcrea {
 	font-size: 40px;
 	margin-top: 50px;
-	}
+}
 /*fin parte marta*/
 
 .all-hobbies-preview {
@@ -375,8 +372,8 @@ header{
 .buttons-container{
 	margin: 10px 0px;
 	display: flex;
-  flex-direction: row;
-  justify-content: center;
+	flex-direction: row;
+	justify-content: center;
 }
 .month, .year{
 	margin-top: 5px;
@@ -388,118 +385,118 @@ header{
 }
 /* La timeline*/
 .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 /* La propia timeline (línea vertical) */
 .timeline::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  background-color: #5A392B;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+	content: '';
+	position: absolute;
+	width: 10px;
+	background-color: #5A392B;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
 }
 /* Contenido alrededor de la timeline */
 .container-timeline {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
 }
 /* Círculos de la timeline */
 .container-timeline::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #5A392B;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 4px solid #5A392B;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
 }
 /* Situar los contenidos de la izquierda*/
 .left {
-  left: 0;
+	left: 0;
 }
 /* Situar los contenidos de la derecha */
 .right {
-  left: 50%;
+	left: 50%;
 }
 /* Arregla la posición de los círculos del contenido de la derecha */
 .right::after {
-  left: -16px;
+	left: -16px;
 }
 /* Añade flechas en el contenido de la izquierda apuntando a la derecha */
 .left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid rgba(125, 190, 165, 0.36);
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid rgba(125, 190, 165, 0.36);
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
 }
 /* Añade flechas en el contenido de la derecha apuntando hacia la izquierda. */
 .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid rgba(125, 190, 165, 0.36);
-  border-width: 10px 10px 10px 0;
-  border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid rgba(125, 190, 165, 0.36);
+	border-width: 10px 10px 10px 0;
+	border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
 }
 /* Estilo de las cajas con el contenido */
 .content-timeline {
-  padding: 10px 30px;
-  background-color: rgba(125, 190, 165, 0.36);
-  position: relative;
-  border-radius: 6px;
+	padding: 10px 30px;
+	background-color: rgba(125, 190, 165, 0.36);
+	position: relative;
+	border-radius: 6px;
 	font-size: 14px;
 }
 .dates-container {
 	display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 0px;
-  margin-bottom: 7px;
+	flex-direction: column;
+	align-items: center;
+	line-height: 0px;
+	margin-bottom: 7px;
 	margin-top: 5px;
 }
 /*Estilos de texto dentro de cajas*/
 .title-year {
-  color: #5A392B;
+	color: #5A392B;
 	margin: 8px;
 	font-size: 20px;
 }
 .job-title, .education-title {
-  font-weight: bold;
+	font-weight: bold;
 }
 .dates-output-container {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
 	padding: 0 20px;
 	margin: 4px 40px;
 }
 .work-information-output-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
- }
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
 .work-information-output-container > p{
-  margin-top: 0px;
+	margin-top: 0px;
 	text-align: center;
 }
 /*End Experience and Education preview*/
@@ -509,7 +506,7 @@ header{
 	margin-right: 20px
 }
 .skill {
-  margin-top: 5px;
+	margin-top: 5px;
 	margin-right: 1%;
 	color: #5A392B;
 }
@@ -517,29 +514,28 @@ header{
 	margin-left: 15%;
 }
 .skill-title {
-  /*font-family: sans-serif;*/
-  font-size: 14px;
+	font-size: 14px;
 	margin-top: 5px;
 }
 .barra {
-  background-color: #E0E0E0 ;
-  border-radius: 10px;
-  width: 85%;
-  height: 10px;
-  margin-left: 0;
+	background-color: #E0E0E0 ;
+	border-radius: 10px;
+	width: 85%;
+	height: 10px;
+	margin-left: 0;
 	margin-right: 0;
-  position: relative;
+	position: relative;
 	display: none;
 	margin-top: 5px;
 }
 .barra_front {
 	width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  background: #7DBEA5;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+	background: #7DBEA5;
 }
 /*Languages form container*/
 #languages-form-container, #hobbies-form-container {
@@ -590,8 +586,14 @@ input[type=checkbox]{
 #hobbies-form {
 	padding-bottom: 2%;
 }
-
-
+.network-img{
+	overflow: hidden;
+	display: block;
+	background-size: 40px 40px;
+	padding-top: 40px;
+	height: 0;
+	width: 40px;
+}
 .linkedin a{
 	background: url('../images/linkedin.png');
 	overflow: hidden;
@@ -649,7 +651,7 @@ input[type=checkbox]{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
- }
+}
 .inputPortfolio{
 	display: flex;
 	text-align: center;
@@ -663,25 +665,25 @@ input[type=checkbox]{
 	margin-right: 8px;
 }
 .codigoqr{
-padding: 15px;
-text-align: center;
+	padding: 15px;
+	text-align: center;
 }
 /*Ventana de alert de error de fecha introducida*/
 .alert-dates{
 	background-color: #FFFEFA;
 	width: 230px;
-  height: 110px;
-  position: fixed;
-  top: 220px;
-  left: 17%;
+	height: 110px;
+	position: fixed;
+	top: 220px;
+	left: 17%;
 	border: 2px solid #7DBEA5;
 }
 .button-alert-img{
 	background-color: transparent;
-  border: none;
+	border: none;
 	position: absolute;
 	top: 3px;
-  right: 0;
+	right: 0;
 	cursor: pointer;
 }
 .text-alert{
@@ -693,7 +695,7 @@ text-align: center;
 }
 .alert-cruise{
 	width: 20px;
-  height: 20px;
+	height: 20px;
 }
 /*footer*/
 .infooter{
@@ -755,19 +757,19 @@ text-align: center;
 	align-items: center;
 	align-content: center;
 	position: relative;
-  height: 300px;
- }
- .flexible::before {
-  content:'';
-  position:absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 103%;
-  background: url(../images/groupMobile.png) left top no-repeat;
-  background-size: cover;
-  z-index: 1;
-  opacity: .5;
+	height: 300px;
+}
+.flexible::before {
+	content:'';
+	position:absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 103%;
+	background: url(../images/groupMobile.png) left top no-repeat;
+	background-size: cover;
+	z-index: 1;
+	opacity: .5;
 }
 .seccion{
 	padding: 60px 0 50px 0;
@@ -775,7 +777,7 @@ text-align: center;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
-  z-index: 2;
+	z-index: 2;
 }
 .titleForm{
 	text-align: center;
@@ -796,7 +798,7 @@ text-align: center;
 	border: 0px;
 }
 .cajas{
-  width: 100%;
+	width: 100%;
 	background-color: #F4EDDD;
 	border: solid 1px #514336;
 	padding: 0 12px;
@@ -812,28 +814,29 @@ text-align: center;
 	border-color: #514336;
 }
 .campos{
- margin: 0 0 1.5rem;
- display: flex;
- flex-direction: row;
+	margin: 0 0 1.5rem;
+	display: flex;
+	flex-direction: row;
 }
-.boton{
+.send-button{
 	color: #514336;
 	background-color: #7DBEA5;
 	font-size: 15px;
 	font-weight: bold;
 	z-index: 1;
 	line-height: 2.8;
-  border-radius: 0.6em;
+	border-radius: 0.6em;
+	border: none;
 	width: 100px;
-  margin-left: auto;
+	margin-left: auto;
 }
 /*mediaqueries*/
 @media all and (min-width: 350px){
 	.headlog{
 		display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-		}
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 	.containerlogo{
 		margin-left: 30px;
 	}
@@ -843,17 +846,17 @@ text-align: center;
 }
 @media all and (min-width: 400px){
 	.headercreatucv{
-	height: 60vh;
+		height: 60vh;
 	}
 	.nets{
 		display: flex;
 		flex-direction: row;
-	 }
+	}
 }
 @media all and (min-width: 460px){
 	#arriba {
-		 bottom: 15px;
-		 right: 27px;
+		bottom: 15px;
+		right: 27px;
 	}
 }
 @media all and (min-width: 490px){
@@ -861,17 +864,13 @@ text-align: center;
 		height: 80vh;
 	}
 }
-	/*.textcrea{
-		font-size: 40px;
-		margin-top: 50px;
-	}*/
 @media all and (max-width: 600px){
 	.text-form-button{
 		font-size: 18px;
 	}
 	.icons{
 		height: 28px;
-	  width: 28px;
+		width: 28px;
 	}
 	/*Mediaqueries de preview de Experiencia y Formación*/
 	/* Poner la línea a la izquierda */
@@ -953,13 +952,16 @@ text-align: center;
 		margin-bottom: 0px;
 		margin-top: 0px;
 	}
-	.machinelog{
+	.machinelog {
 		max-width: 85%;
 		margin: 0px;
 		padding: 3px;
 	}
+	.machinelog-contact{
+		max-width: 75%;
+	}
 	.containerleters{
-			width: 1000px;
+		width: 1000px;
 	}
 	.letterslog{
 		max-width: 100%;
@@ -984,7 +986,10 @@ text-align: center;
 		margin-bottom: 8px;
 	}
 	.machinelog{
-		max-width: 74%;
+		max-width: 70%;
+	}
+	.machinelog-contact{
+		max-width: 46%;
 	}
 	.containerleters{
 		width: 1000px;
@@ -1063,8 +1068,8 @@ text-align: center;
 }
 @media print {
 	.barra, .content-timeline, .languages-bar-preview, .timeline, .printnet {
-			-webkit-print-color-adjust: exact;
-		}
+		-webkit-print-color-adjust: exact;
+	}
 	header, footer, nav {
 		display: none;
 	}
@@ -1072,40 +1077,40 @@ text-align: center;
 		margin-top: 50px;
 	}
 	.formulario-sec {
-		  display: none;
+		display: none;
 	}
 	.timeline::after {
-	  left: 50%;
+		left: 50%;
 	}
 	.container-timeline {
-	  padding: 10px 40px;
-	  width: 50%;
+		padding: 10px 40px;
+		width: 50%;
 	}
 	.container-timeline::after {
-	  left: 343px;
-	  top: 15px;
+		left: 343px;
+		top: 15px;
 	}
 	.left {
-	  left: 0;
+		left: 0;
 	}
 	.right {
-	  left: 50%;
+		left: 50%;
 	}
 	.right::after {
-	  left: -16px;
+		left: -16px;
 	}
 	.left::before {
-	  top: 22px;
-	  left: 319px;
-	  border: medium solid rgba(125, 190, 165, 0.36);
-	  border-width: 10px 0 10px 10px;
-	  border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
+		top: 22px;
+		left: 319px;
+		border: medium solid rgba(125, 190, 165, 0.36);
+		border-width: 10px 0 10px 10px;
+		border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
 	}
 	.right::before {
-	  top: 22px;
-	  left: 30px;
-	  border: medium solid rgba(125, 190, 165, 0.36);
-	  border-width: 10px 10px 10px 0;
-	  border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
+		top: 22px;
+		left: 30px;
+		border: medium solid rgba(125, 190, 165, 0.36);
+		border-width: 10px 10px 10px 0;
+		border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
 	}
 }

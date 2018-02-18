@@ -1,39 +1,40 @@
  <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
+
+	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scriptoras</title>
+		<title>Scriptoras</title>
 		<link rel="stylesheet" href="styles/styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
-  </head>
-  <body id="contenedorPrincipal">
+	</head>
+
+	<body id="contenedorPrincipal">
 		<!-- Header -->
 		<header class="headlog">
 			<div class="containerlogo">
-  			<div>
-  				<a href="index.html"><img src="images/logoMaquina.png" alt="logoscriptoras" class="machinelog"></a>
-  			</div>
-  			<div class="containerleters">
-  				<a href="index.html"><img src="images/logoLetras.png" alt="logoscriptoras" class="letterslog"></a>
-  			</div>
+				<div>
+					<a href="index.html"><img src="images/logoMaquina.png" alt="logoscriptoras" class="machinelog"></a>
+				</div>
+				<div class="containerleters">
+					<a href="index.html"><img src="images/logoLetras.png" alt="logoscriptoras" class="letterslog"></a>
+				</div>
 			</div>
 			<div class="containericonos">
 				<input class="icons" type="button" onclick="viewprev()" id="btnview" title="Vista previa">
 				<input class="icons" type="button" onclick="printCurriculum()" id="btnprint" title="Imprimir">
 			</div>
-				<!-- value="Ver mi CV">-->
 		</header>
 		<!-- End Header -->
 		<!-- Container -->
 		<main class="bloque">
 			<!--cabecera-->
 			<div id="header-fondo">
-      	<h1 class="text-crea"></h1>
-        <audio id="sound-efx" src="styles/typewriter.wav"></audio>
+				<h1 class="text-crea"></h1>
+				<audio id="sound-efx" src="styles/typewriter.wav"></audio>
 			</div>
-      <button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src="images/expand-button-medium.png" alt="rellena-los-campos"></a></button>
-      <div id="empty-container"></div>
+			<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src="images/expand-button-medium.png" alt="rellena-los-campos"></a></button>
+			<div id="empty-container"></div>
 			<div class="main-web-sections">
 				<section class="formulario-sec" id="ventana1">
 					<form class="form-section-container" id=principal-section action="index.html" method="post">
@@ -60,96 +61,104 @@
 							</div>
 						</div>
 					</form>
-					<!---ABOUT-->
-					<form class="form-section-container" action="index.html" method="post"> <!--Mostrado-->
-						<div class="title-container">
-							<h2 class="text-form-button" onclick="editar('content-about')">Sobre mí</h2>
-							<button id="openButtonAbout" class="open-section-button shown" type="button" name="about-me-button" onclick="editar('content-about')" value="openButton">
-								<img src="images/expand-button.png" alt="addButton">
-							</button>
-							<button id="closeButtonAbout" class="close-section-button hidden" type="button" name="about-me-button" onclick="ocultar('content-about')" value="closeButton">
-								<img src="images/expand-arrow.png" alt="minusbuttom">
-							</button>
-						</div>
-						<div  id="content-about" class="boxes-container"><!--Oculto-->
-							<label for="about"></label>
-							<textarea name="about-me" rows="6" cols="25" placeholder="Introduce una breve descripción sobre ti." class="textarea" id="text-about"></textarea>
-						</div>
-					</form>
-					<!--END ABOUT-->
-					<!--Sección de Experiencia-->
-					<form class="form-section-container" id=experience-section action="index.html" method="post">
-						<div class="title-container">
-							<h2 class="text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
-							<button id="openButtonExperience" class="open-section-button shown" type="button" name="experience-button" onclick="editar('job-box')" value="openButton">
-								<img src="images/expand-button.png" alt="addButton">
-							</button>
-							<button id="closeButtonExperience" class="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('job-box')" value="closeButton">
-							<img src="images/expand-arrow.png" alt="minusbuttom">
-							</button>
-						</div>
-						<div class="boxes-container" id="job-box">
-							<h3 class="subtitle-section">Puesto de trabajo</h3>
-							<div>
-								<label for="job"></label>
-								<input class="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo"/>
+					<!--- ABOUT -->
+					<section>
+						<form class="form-section-container" action="index.html" method="post"> <!--Mostrado-->
+							<div class="title-container">
+								<h2 class="text-form-button" onclick="editar('content-about')">Sobre mí</h2>
+								<button id="openButtonAbout" class="open-section-button shown" type="button" name="about-me-button" onclick="editar('content-about')" value="openButton">
+									<img src="images/expand-button.png" alt="addButton">
+								</button>
+								<button id="closeButtonAbout" class="close-section-button hidden" type="button" name="about-me-button" onclick="ocultar('content-about')" value="closeButton">
+									<img src="images/expand-arrow.png" alt="minusbuttom">
+								</button>
 							</div>
-							<div>
-								<label for="company"></label>
-								<input class="inputs" id="company" type="text" name="company-name" placeholder="Indica el nombre de la empresa">
+							<div  id="content-about" class="boxes-container"><!--Oculto-->
+								<label for="about"></label>
+								<textarea name="about-me" rows="6" cols="25" placeholder="Introduce una breve descripción sobre ti." class="textarea" id="text-about"></textarea>
 							</div>
-							<div class="dates-boxes">
-								<label>Fecha de inicio:</label>
-								<select class="select-styles month" id="month-job-start" name="job-start-month"></select>
-								<select class="select-styles year-ini" id="year-job-start" name="job-start-year"></select>
+						</form>
+					</section>
+					<!-- END ABOUT -->
+					<!-- EXPERIENCE -->
+					<section>
+						<form class="form-section-container" id=experience-section action="index.html" method="post">
+							<div class="title-container">
+								<h2 class="text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
+								<button id="openButtonExperience" class="open-section-button shown" type="button" name="experience-button" onclick="editar('job-box')" value="openButton">
+									<img src="images/expand-button.png" alt="addButton">
+								</button>
+								<button id="closeButtonExperience" class="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('job-box')" value="closeButton">
+									<img src="images/expand-arrow.png" alt="minusbuttom">
+								</button>
 							</div>
-							<div class="dates-boxes">
-								<label>Fecha de finalización</label>
-								<select class="select-styles month" id="month-job-end" name="job-end-month"></select>
-								<select class="select-styles year" id="year-job-end" name="job-end-year"></select>
+							<div class="boxes-container" id="job-box">
+								<h3 class="subtitle-section">Puesto de trabajo</h3>
+								<div>
+									<label for="job"></label>
+									<input class="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo"/>
+								</div>
+								<div>
+									<label for="company"></label>
+									<input class="inputs" id="company" type="text" name="company-name" placeholder="Indica el nombre de la empresa">
+								</div>
+								<div class="dates-boxes">
+									<label>Fecha de inicio:</label>
+									<select class="select-styles month" id="month-job-start" name="job-start-month"></select>
+									<select class="select-styles year-ini" id="year-job-start" name="job-start-year"></select>
+								</div>
+								<div class="dates-boxes">
+									<label>Fecha de finalización</label>
+									<select class="select-styles month" id="month-job-end" name="job-end-month"></select>
+									<select class="select-styles year" id="year-job-end" name="job-end-year"></select>
+								</div>
+								<div class="buttons-container">
+									<input class="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir">
+									<input class="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar">
+								</div>
 							</div>
-							<div class="buttons-container">
-								<input class="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir">
-								<input class="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar">
+						</form>
+					</section>
+					<!-- END EXPERIENCE -->
+					<!-- TRAINING-->
+					<section>
+						<form class="form-section-container" id="education-section" action="index.html" method="post">
+							<div class="title-container">
+								<h2 class="text-form-button" onclick="editar('education-box')">Formación</h2>
+								<button id="openButtonFormac" class="open-section-button shown" type="button" name="languageButton" onclick="editar('education-box')" value="openButton">
+									<img src="images/expand-button.png" alt="addButton">
+								</button>
+								<button id="closeButtonFormac" class="close-section-button hidden" type="button" name="education-button" onclick="ocultar('education-box')" value="closeButton">
+									<img src="images/expand-arrow.png" alt="minusbuttom">
+								</button>
 							</div>
-						</div>
-					</form>
-					<!--Sección de Formación-->
-					<form class="form-section-container" id="education-section" action="index.html" method="post">
-						<div class="title-container">
-							<h2 class="text-form-button" onclick="editar('education-box')">Formación</h2>
-							<button id="openButtonFormac" class="open-section-button shown" type="button" name="languageButton" onclick="editar('education-box')" value="openButton">
-								<img src="images/expand-button.png" alt="addButton">
-							</button>
-							<button id="closeButtonFormac" class="close-section-button hidden" type="button" name="education-button" onclick="ocultar('education-box')" value="closeButton">
-							<img src="images/expand-arrow.png" alt="minusbuttom">
-							</button>
-						</div>
-						<div class="boxes-container" id="education-box">
-							<h3 class="subtitle-section">Titulación</h3>
-							<div>
-								<input class="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación"/>
+							<div class="boxes-container" id="education-box">
+								<h3 class="subtitle-section">Titulación</h3>
+								<div>
+									<input class="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación"/>
+								</div>
+								<div >
+									<input class="inputs" id="center" type="text" name="center-name" placeholder="Indica el centro de estudios">
+								</div>
+								<div class="dates-boxes">
+									<label>Fecha de inicio</label>
+									<select class="select-styles month" id="month-training-start" name="training-start-month"></select>
+									<select class="select-styles year-ini" id="year-training-start" name="training-start-year"></select>
+								</div>
+								<div class="dates-boxes">
+									<label>Fecha de finalización</label>
+									<select class="select-styles month" id="month-training-end" name="training-end-month"></select>
+									<select class="select-styles year" id="year-training-end" name="training-end-year"></select>
+								</div>
+								<div class="buttons-container">
+									<input type="button" value="Añadir" name="add-ed" id="button-add-ed" class="buttons-save-general formacion">
+									<input type="button" value="Borrar" name="delete-ed" id="button-delete-ed" class="buttons-save-general formacion">
+								</div>
 							</div>
-							<div >
-								<input class="inputs" id="center" type="text" name="center-name" placeholder="Indica el centro de estudios">
-							</div>
-							<div class="dates-boxes">
-								<label>Fecha de inicio</label>
-								<select class="select-styles month" id="month-training-start" name="training-start-month"></select>
-								<select class="select-styles year-ini" id="year-training-start" name="training-start-year"></select>
-							</div>
-							<div class="dates-boxes">
-								<label>Fecha de finalización</label>
-								<select class="select-styles month" id="month-training-end" name="training-end-month"></select>
-								<select class="select-styles year" id="year-training-end" name="training-end-year"></select>
-							</div>
-							<div class="buttons-container">
-								<input type="button" value="Añadir" name="add-ed" id="button-add-ed" class="buttons-save-general formacion">
-								<input type="button" value="Borrar" name="delete-ed" id="button-delete-ed" class="buttons-save-general formacion">
-							</div>
-						</div>
-					</form>
-					<!--Skills -->
+						</form>
+					</section>
+					<!--END TRAINING-->
+					<!-- SKILLS -->
 					<section  class="form-section-container">
 						<div class="title-container">
 							<h2 class="text-form-button">Habilidades</h2><!--Mostrado-->
@@ -157,7 +166,7 @@
 								<img src="images/expand-button.png" alt="addButton">
 							</button>
 							<button id="closeButtonSkill" class="close-section-button hidden" type="button" name="content-skills-button" onclick="ocultar('content-skills')" value="closeButton">
-									<img src="images/expand-arrow.png" alt="minusbuttom">
+								<img src="images/expand-arrow.png" alt="minusbuttom">
 							</button>
 						</div>
 						<form action="index.html" method="post">
@@ -181,247 +190,251 @@
 							</div>
 						</form>
 					</section>
-					<!--End Skills-->
-	        <!--Languages form section-->
-	        <section id="languages-form-container">
-	          <div class="title-container">
-	            <h2 class="text-form-button">Idiomas</h2>
-	            <button id="openButtonlanguages" class="open-section-button shown" type="button" name="languageButton" onclick="editar('languages-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
+					<!-- END SKILLS -->
+					<!-- LANGUAGES SECTION -->
+					<section id="languages-form-container">
+						<div class="title-container">
+							<h2 class="text-form-button">Idiomas</h2>
+							<button id="openButtonlanguages" class="open-section-button shown" type="button" name="languageButton" onclick="editar('languages-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
 							<button id="closeButtonlanguages" class="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('languages-form')" value="closeButton">
 							<img src="images/expand-arrow.png" alt="minusbuttom"></button>
-	          </div>
-	          <form id="languages-form" action="index.html" method="post">
-	            <div class="input-lang">
-	              <input class="language inputs" type="text" name="language1" value="" placeholder="Escribe un idioma">
-	              <input class="percentage inputs" type="text" name="percentage1" value="" placeholder="Escribe su porcentaje">
-	            </div>
-	            <div class="input-lang">
-	              <input class="language inputs" type="text" name="language2" value="" placeholder="Escribe un idioma">
-	              <input class="percentage inputs" type="text" name="percentage2" value="" placeholder="Escribe su porcentaje">
-	            </div>
-	            <div class="input-lang">
-	              <input class="language inputs" type="text" name="language3" value="" placeholder="Escribe un idioma">
-	              <input class="percentage inputs" type="text" name="percentage3" value="" placeholder="Escribe su porcentaje">
-	            </div>
-	          </form>
-	        </section>
-	        <!--Hobbies form section-->
-	        <section id="hobbies-form-container">
-	          <div class="title-container">
-	            <h2 class="text-form-button">Hobbies</h2>
-	            <button id="openButtonHobbies" class="addLanguageButton open-section-button shown" type="button" name="languageButton" onclick="editar('hobbies-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
-							<button id="closeButtonHobbies" class="close-section-button hidden" type="button" name="hobbiesForm-button" onclick="ocultar('hobbies-form')" value="closeButton">
-							<img src="images/expand-arrow.png" alt="minusbuttom">
-						  </button>
-	          </div>
-	          <form id="hobbies-form" action="index.html" method="post">
-	            <div class="check-box-hobbies">
-	              <label for="hobbie1">Leer</label>
-	              <input id ="hobbie1" type="checkbox" name="read" value="hobbies" onchange="showHobbiesPreview('read')">
-	            </div>
-	            <div class="check-box-hobbies">
-	              <label for="hobbie2">Viajar</label>
-	              <input id ="hobbie2" type="checkbox" name="travel" value="hobbies" onchange="showHobbiesPreview('travel')">
-	            </div>
-	            <div class="check-box-hobbies">
-	              <label for="hobbie3">Videojuegos</label>
-	              <input id ="hobbie3" type="checkbox" name="game" value="hobbies" onchange="showHobbiesPreview('game')">
-	            </div>
-	            <div class="check-box-hobbies">
-	              <label for="hobbie4">Deportes</label>
-	              <input id ="hobbie4" type="checkbox" name="sports" value="hobbies" onchange="showHobbiesPreview('sports')">
-	            </div>
-	            <div class="check-box-hobbies">
-	              <label for="hobbie5">Cine</label>
-	              <input id ="hobbie5" type="checkbox" name="movies" value="hobbies" onchange="showHobbiesPreview('cinema')">
-	            </div>
-	            <div class="check-box-hobbies">
-	              <label for="hobbie6">Música</label>
-	              <input id ="hobbie6" type="checkbox" name="music" value="hobbies" onchange="showHobbiesPreview('music')">
-	            </div>
-	          </form>
-	        </section>
-					<!--Sección de Redes sociales -->
-        	<form class="form-section-container" action="index.html" method="post">
-            <div class="title-container">
-              <h2 class="text-form-button">Redes Sociales</h2>
-  						  <button id="openButtonNet" class="open-section-button shown" type="button" name="networksButton" onclick="showNetsocial()" value="openButton">
-  								<img src="images/expand-button.png" alt="addButton"></button>
-								<button id="closeButtonNet" class="close-section-button hidden" type="button" name="minredes-button" onclick="ocultar('minredes')" value="closeButton">
-	 								<img src="images/expand-arrow.png" alt="minusbuttom">
-	 							</button>
-  					</div>
-						<div class="boxes-container net-social-hidden" id="minredes">
-              <div class="nets">
-                <label class="socialLabel" for="linkedin">Linkedin</label>
-          	     <input class="users inputs" id="linkedin" type="text" name="net1" placeholder=" Rellena con tu usuario" >
-              </div>
-      	      <div class="nets">
-	              <label class="socialLabel" for="facebook">Facebook</label>
-	              <input class="users inputs" id="facebook" type="text" name="net2" placeholder=" Rellena con tu usuario" >
-	            </div>
-	            <div class="nets">
-	              <label class="socialLabel" for="github">Github</label>
-	              <input class="users inputs" id="github" type="text" name="net3" placeholder=" Rellena con tu usuario" >
-	            </div>
-	            <div class="nets">
-	              <label class="socialLabel" for="twitter">Twitter</label>
-	              <input class="users inputs" id="twitter" type="text" name="net3" placeholder=" Rellena con tu usuario">
-	            </div>
-	            <div class="nets">
-	              <label class="socialLabel" for="instagram">Instagram</label>
-	              <input class="users inputs" id="instagram" type="text" name="net3" placeholder=" Rellena con tu usuario" >
-	            </div>
 						</div>
-				  </form>
-         <!--Sección de Portfolio-->
-         	<form class="form-section-container" action="index.html" method="post">
- 						<div class="title-container">
-             	<h2 class="text-form-button">Portfolio</h2>
- 							<button  id="openButtonQr" class="open-section-button shown" type="button" name="networksButton" onclick="editar('showNetsocial')" value="openButton">
- 								<img src="images/expand-button.png" alt="addButton">
-							</button>
-							<button  id="closeButtonQr" class="close-section-button hidden" type="button" name="showNetsocial-button" onclick="ocultar('showNetsocial')" value="closeButton">
+						<form id="languages-form" action="index.html" method="post">
+							<div class="input-lang">
+								<input class="language inputs" type="text" name="language1" value="" placeholder="Escribe un idioma">
+								<input class="percentage inputs" type="text" name="percentage1" value="" placeholder="Escribe su porcentaje">
+							</div>
+							<div class="input-lang">
+								<input class="language inputs" type="text" name="language2" value="" placeholder="Escribe un idioma">
+								<input class="percentage inputs" type="text" name="percentage2" value="" placeholder="Escribe su porcentaje">
+							</div>
+							<div class="input-lang">
+								<input class="language inputs" type="text" name="language3" value="" placeholder="Escribe un idioma">
+								<input class="percentage inputs" type="text" name="percentage3" value="" placeholder="Escribe su porcentaje">
+							</div>
+						</form>
+					</section>
+					<!-- END LANGUAGES SECTION -->
+					<!-- HOBBIES -->
+					<section id="hobbies-form-container">
+						<div class="title-container">
+							<h2 class="text-form-button">Hobbies</h2>
+							<button id="openButtonHobbies" class="addLanguageButton open-section-button shown" type="button" name="languageButton" onclick="editar('hobbies-form')" value="openButton">
+								<img src="images/expand-button.png" alt="addButton"></button>
+							<button id="closeButtonHobbies" class="close-section-button hidden" type="button" name="hobbiesForm-button" onclick="ocultar('hobbies-form')" value="closeButton">
 								<img src="images/expand-arrow.png" alt="minusbuttom">
 							</button>
- 						</div>
-            <div class="boxes-container net-social-hidden" id="showNetsocial">
-             <div class="nets">
-               <input class="inputPortfolio" id="inputQr" type="text" name="inputQr" placeholder=" Contenido para generar QR">
-               <input type="button" id="button-generateqr" value="Generar" class="buttons-save-general">
-             </div>
-           </div>
- 			   </form>
-       </section>
-<!--______Comienza la seccion de previsualización______-->
-
-
-			<section class="previsualizacion-sec" id="ventana2">
-				<div class="containerprev">
-					<div class="cajaiconsprev">
-						<button class="cruz-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
-						<img src="images/btnclose.png" alt="cruzbuttom"></button>
-						<input class="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
-						<input class="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
-					</div>
-				<!--datos principales-->
-				<section class="containerprefoto">
-					<div id="prefoto" class="prefoto"></div>
-				</section>
-				<p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="preprincipales" id="preprincipales-link">
-					<p id="prenombre" class="name">Nombre</p>
-					<p id="preapellidos">Apellido</p>
-					<p id="preprofesion">Profesion</p>
-					<p id="preemail">Email</p>
-					<p id="pretelefono">Telefono</p>
-				</section>
-
-				<!--Sección About Me-->
-				<p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="">
-					<h2 class="section-title">Sobre mí</h2>
-						<p id="aboutMe-preview" class="section-title"></p>
-				</section>
-
-				<!--Sección de Experiencia y Formación-->
-        <p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="">
-					<h2 class="section-title">Experiencia y Formación</h2>
-					<section class="timeline">
+						</div>
+						<form id="hobbies-form" action="index.html" method="post">
+							<div class="check-box-hobbies">
+								<label for="hobbie1">Leer</label>
+								<input id ="hobbie1" type="checkbox" name="read" value="hobbies" onchange="showHobbiesPreview('read')">
+							</div>
+							<div class="check-box-hobbies">
+								<label for="hobbie2">Viajar</label>
+								<input id ="hobbie2" type="checkbox" name="travel" value="hobbies" onchange="showHobbiesPreview('travel')">
+							</div>
+							<div class="check-box-hobbies">
+								<label for="hobbie3">Videojuegos</label>
+								<input id ="hobbie3" type="checkbox" name="game" value="hobbies" onchange="showHobbiesPreview('game')">
+							</div>
+							<div class="check-box-hobbies">
+								<label for="hobbie4">Deportes</label>
+								<input id ="hobbie4" type="checkbox" name="sports" value="hobbies" onchange="showHobbiesPreview('sports')">
+							</div>
+							<div class="check-box-hobbies">
+								<label for="hobbie5">Cine</label>
+								<input id ="hobbie5" type="checkbox" name="movies" value="hobbies" onchange="showHobbiesPreview('cinema')">
+							</div>
+							<div class="check-box-hobbies">
+								<label for="hobbie6">Música</label>
+								<input id ="hobbie6" type="checkbox" name="music" value="hobbies" onchange="showHobbiesPreview('music')">
+							</div>
+						</form>
+					</section>
+					<!-- SOCIAL MEDIA -->
+					<section>
+						<form class="form-section-container" action="index.html" method="post">
+							<div class="title-container">
+								<h2 class="text-form-button">Redes Sociales</h2>
+	  						<button id="openButtonNet" class="open-section-button shown" type="button" name="networksButton" onclick="showNetsocial()" value="openButton">
+	  							<img src="images/expand-button.png" alt="addButton"></button>
+								<button id="closeButtonNet" class="close-section-button hidden" type="button" name="minredes-button" onclick="ocultar('minredes')" value="closeButton">
+		 							<img src="images/expand-arrow.png" alt="minusbuttom">
+		 						</button>
+	  					</div>
+							<div class="boxes-container net-social-hidden" id="minredes">
+								<div class="nets">
+									<label class="socialLabel" for="linkedin">Linkedin</label>
+									<input class="users inputs" id="linkedin" type="text" name="net1" placeholder=" Rellena con tu usuario" >
+								</div>
+								<div class="nets">
+									<label class="socialLabel" for="facebook">Facebook</label>
+									<input class="users inputs" id="facebook" type="text" name="net2" placeholder=" Rellena con tu usuario" >
+								</div>
+								<div class="nets">
+									<label class="socialLabel" for="github">Github</label>
+									<input class="users inputs" id="github" type="text" name="net3" placeholder=" Rellena con tu usuario" >
+								</div>
+								<div class="nets">
+									<label class="socialLabel" for="twitter">Twitter</label>
+									<input class="users inputs" id="twitter" type="text" name="net3" placeholder=" Rellena con tu usuario">
+								</div>
+								<div class="nets">
+									<label class="socialLabel" for="instagram">Instagram</label>
+									<input class="users inputs" id="instagram" type="text" name="net3" placeholder=" Rellena con tu usuario" >
+								</div>
+							</div>
+						</form>
+					</section>
+					<!--  END SOCIAL MEDIA -->
+					<!-- PORTFOLIO -->
+					<section>
+						<form class="form-section-container" action="index.html" method="post">
+							<div class="title-container">
+								<h2 class="text-form-button">Portfolio</h2>
+	 							<button  id="openButtonQr" class="open-section-button shown" type="button" name="networksButton" onclick="editar('showNetsocial')" value="openButton">
+	 								<img src="images/expand-button.png" alt="addButton">
+								</button>
+								<button  id="closeButtonQr" class="close-section-button hidden" type="button" name="showNetsocial-button" onclick="ocultar('showNetsocial')" value="closeButton">
+									<img src="images/expand-arrow.png" alt="minusbuttom">
+								</button>
+	 						</div>
+							<div class="boxes-container net-social-hidden" id="showNetsocial">
+								<div class="nets">
+									<input class="inputPortfolio" id="inputQr" type="text" name="inputQr" placeholder=" Contenido para generar QR">
+									<input type="button" id="button-generateqr" value="Generar" class="buttons-save-general">
+								</div>
+							</div>
+						</form>
 					</section>
 				</section>
-<!--___________________________Skills_______________________________________-->
-			<p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="section-skills">
-					<h2 class="section-title">Habilidades</h2>
-					<div class="skill-pre">
-    				<div class="skill-title" id="skill1-preview"></div>
-    				<div class="barra">
-        			<div class="barra_front" id="barra1"></div>
-    				</div>
-    					<div class="skill-title" id="skill2-preview"></div>
-    					<div class="barra">
-        				<div class="barra_front" id="barra2"></div>
-    					</div>
-    					<div class="skill-title" id="skill3-preview"></div>
-    					<div class="barra">
-        				<div class="barra_front" id="barra3"></div>
-    					</div>
-							<div class="skill-title" id="skill4-preview"></div>
-							<div class="barra">
-								<div class="barra_front" id="barra4"></div>
-							</div>
+
+<!--______START PREVIEW ______-->
+				<section class="previsualizacion-sec" id="ventana2">
+					<div class="containerprev">
+						<div class="cajaiconsprev">
+							<button class="cruz-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
+								<img src="images/btnclose.png" alt="cruzbuttom">
+							</button>
+							<input class="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
+							<input class="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
 						</div>
-				</section>
-<!--___________________________END SKILLS_______________________________________-->
-        <!--Languages preview section-->
-        <p class="separador">* * * * * * * * * * * * * * * </p>
-        <section id="languages-preview">
-          <h2 class="section-title">Idiomas</h2>
-          <div class="languages-bar-preview">
-            <div class="percentage-bar">
-              <p class="text-bar-preview"></p>
-            </div>
-          </div>
-          <div class="languages-bar-preview">
-            <div class="percentage-bar">
-              <p class="text-bar-preview"></p>
-            </div>
-          </div>
-          <div class="languages-bar-preview">
-            <div class="percentage-bar">
-              <p class="text-bar-preview"></p>
-            </div>
-          </div>
-        </section>
+				<!--datos principales-->
+						<div class="containerprefoto">
+							<div id="prefoto" class="prefoto"></div>
+						</div>
+						<p class="separador">* * * * * * * * * * * * * * * </p>
+						<section class="preprincipales" id="preprincipales-link">
+							<p id="prenombre" class="name">Nombre</p>
+							<p id="preapellidos">Apellido</p>
+							<p id="preprofesion">Profesion</p>
+							<p id="preemail">Email</p>
+							<p id="pretelefono">Telefono</p>
+						</section>
 
-        <!--Hobbies section-->
-        <p class="separador">* * * * * * * * * * * * * * * </p>
-        <section id="hobbies-preview">
-          <h2 class="section-title">Hobbies</h2>
-          <div class="all-hobbies-preview">
-            <img id="read" src="images/readSmall.png" alt="read hobbie">
-            <img id="travel" src="images/travelSmall.png" alt="travel hobbie">
-            <img id="game" src="images/videogameSmall.png" alt="game hobbie">
-            <img id="sports" src="images/sportsSmall.png" alt="sports hobbie">
-            <img id="cinema" src="images/cinemaSmall.png" alt="cinema hobbie">
-            <img id="music" src="images/musicSmall.png" alt="music hobbie">
+						<!--Sección About Me-->
+						<p class="separador">* * * * * * * * * * * * * * * </p>
+						<section class="">
+							<h2 class="section-title">Sobre mí</h2>
+								<p id="aboutMe-preview" class="section-title"></p>
+						</section>
+
+				<!--Sección de Experiencia y Formación-->
+        		<p class="separador">* * * * * * * * * * * * * * * </p>
+						<section class="">
+							<h2 class="section-title">Experiencia y Formación</h2>
+							<section class="timeline"></section>
+						</section>
+				<!--Skills -->
+						<p class="separador">* * * * * * * * * * * * * * * </p>
+						<section class="section-skills">
+							<h2 class="section-title">Habilidades</h2>
+							<div class="skill-pre">
+								<div class="skill-title" id="skill1-preview"></div>
+								<div class="barra">
+									<div class="barra_front" id="barra1"></div>
+								</div>
+								<div class="skill-title" id="skill2-preview"></div>
+								<div class="barra">
+									<div class="barra_front" id="barra2"></div>
+								</div>
+								<div class="skill-title" id="skill3-preview"></div>
+								<div class="barra">
+									<div class="barra_front" id="barra3"></div>
+								</div>
+								<div class="skill-title" id="skill4-preview"></div>
+								<div class="barra">
+									<div class="barra_front" id="barra4"></div>
+								</div>
+							</div>
+						</section>
+					<!-- END SKILLS -->
+					<!--Languages preview section-->
+						<p class="separador">* * * * * * * * * * * * * * * </p>
+						<section id="languages-preview">
+							<h2 class="section-title">Idiomas</h2>
+							<div class="languages-bar-preview">
+								<div class="percentage-bar">
+									<p class="text-bar-preview"></p>
+								</div>
+							</div>
+							<div class="languages-bar-preview">
+								<div class="percentage-bar">
+									<p class="text-bar-preview"></p>
+								</div>
+							</div>
+							<div class="languages-bar-preview">
+								<div class="percentage-bar">
+									<p class="text-bar-preview"></p>
+								</div>
+							</div>
+						</section>
+
+						<!--Hobbies section-->
+						<p class="separador">* * * * * * * * * * * * * * * </p>
+						<section id="hobbies-preview">
+						<h2 class="section-title">Hobbies</h2>
+							<div class="all-hobbies-preview">
+								<img id="read" src="images/readSmall.png" alt="read hobbie">
+								<img id="travel" src="images/travelSmall.png" alt="travel hobbie">
+								<img id="game" src="images/videogameSmall.png" alt="game hobbie">
+								<img id="sports" src="images/sportsSmall.png" alt="sports hobbie">
+								<img id="cinema" src="images/cinemaSmall.png" alt="cinema hobbie">
+								<img id="music" src="images/musicSmall.png" alt="music hobbie">
+							</div>
+						</section>
+
+						<!--Sección de Redes sociales -->
+						<p class="separador">* * * * * * * * * * * * * * * </p>
+						<section>
+							<div class="sociality">
+								<div class="socialNetworks">
+									<ul class="social">
+										<li class="linkedin invisible">
+											<a id="a-linkedin" class="printnet" href="https://www.linkedin.com/in/" target="_blank">linkedin</a>
+										</li>
+										<li class="facebook invisible">
+											<a id="a-facebook" class="printnet" href="https://www.facebook.com/" target="_blank">facebook</a>
+										</li>
+										<li class="github invisible">
+											<a id="a-github" class="printnet" href="https://github.com/" target="_blank">github</a>
+										</li>
+										<li class="twitter invisible">
+											<a id="a-twitter" class="printnet" href="https://twitter.com/" target="_blank">twitter</a>
+										</li>
+										<li class="instagram invisible">
+											<a id="a-instagram" class="printnet" href="https://www.instagram.com/" target="_blank">instagram</a>
+										</li>
+									</ul>
+								</div>
+								<a href='' id='qrlink'>
+									<div id="codigoqr" class="codigoqr"></div>
+								</a>
+							</div>
+						</section>
 					</div>
-        </section>
-
-        <!--Sección de Redes sociales -->
-        <p class="separador">* * * * * * * * * * * * * * * </p>
-        <section>
-          <div class="sociality">
-            <div class="socialNetworks">
-              <ul class="social">
-                <li class="linkedin invisible">
-                  <a id="a-linkedin" class="printnet" href="https://www.linkedin.com/in/" target="_blank">linkedin</a>
-                </li>
-                <li class="facebook invisible">
-                  <a id="a-facebook" class="printnet" href="https://www.facebook.com/" target="_blank">facebook</a>
-                </li>
-                <li class="github invisible">
-                  <a id="a-github" class="printnet" href="https://github.com/" target="_blank">github</a>
-                </li>
-                <li class="twitter invisible">
-                  <a id="a-twitter" class="printnet" href="https://twitter.com/" target="_blank">twitter</a>
-                </li>
-                <li class="instagram invisible">
-                  <a id="a-instagram" class="printnet" href="https://www.instagram.com/" target="_blank">instagram</a>
-                </li>
-              </ul>
-            </div>
-            <a href='' id='qrlink'>
-              <div id="codigoqr" class="codigoqr"></div>
-            </a>
-           </div>
-
-        </section>
-				</div>
-      </section>
-
+				</section>
 			</div>
 			<div class="alert-dates invisible">
 				<button class="button-alert-img" type="button" name="button">
@@ -435,46 +448,60 @@
 				</button>
 				<p class="text-alert">¡Ojo! No has introducido el mes.</p>
 			</div>
-    </main>
+		</main>
 		<!-- End Container -->
 		<!-- Footer -->
 		<div id="btrs">
-<p><b>Comparte nuestra página en redes sociales</b></p>
-<script type="text/javascript">
-var ub = window.location;
-var us="https://slack.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-var uf="https://www.facebook.com/sharer.php?u="+"https://adalab.github.io/clarke-s2-scriptoras";
-var ut="https://twitter.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-var ug="https://plus.google.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-var up="https://www.pinterest.com/pin/create/button/?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-var ul="https://www.linkedin.com/shareArticle?mini=true&url="+"https://adalab.github.io/clarke-s2-scriptoras";
-var uw="whatsapp://share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-</script>
-<a href="javascript:void(0);" onclick="window.open(us,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Slack"><img alt="Compartir en slack" class="sl" height="40" src="https://i.pinimg.com/originals/5c/49/e7/5c49e71075941267cfaf5eb2700e7049.png" title="Compartir en slack" width="40" /></a>
-<a href="javascript:void(0);" onclick="window.open(uf,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Facebook"><img alt="Compartir en facebook" class="fb" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/facebook-long.png" title="Compartir en facebook" width="40" /></a>
-<a href="javascript:void(0);" onclick="window.open(ug,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Google+"><img alt="Compartir en google+" class="glg" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/google-long.png" title="Compartir en google+" width="40" /></a>
-<a href="javascript:void(0);" onclick="window.open(ut,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Twitter"><img alt="Compartir en twitter" class="twtr" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/twitter-long.png" title="Compartir en twitter" width="40" /></a>
-<a href="javascript:void(0);" onclick="window.open(up,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Pinterest"><img alt="Compartir en pinterest" class="pnt" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/pinterest-long.png" title="Compartir en pinterest" width="40" /></a>
-<a href="javascript:void(0);" onclick="window.open(ul,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en linkedin+"><img alt="Compartir en likedin" class="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/linkedin-long.png" title="Compartir en Likedin" width="40" /></a>
-<a href="javascript:void(0);" data-action=”share/whatsapp/share” onclick="window.open(uw,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en WhatsApp+"><img alt="Compartir en WhatsApp " class="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/whatsapp-long.png" title="Compartir en WhatsApp " width="40" /></a>
-</div>
-	  <footer class="infooter">
+			<p><b>Comparte nuestra página en redes sociales</b></p>
+			<script type="text/javascript">
+				var ub = window.location;
+				var us="https://slack.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
+				var uf="https://www.facebook.com/sharer.php?u="+"https://adalab.github.io/clarke-s2-scriptoras";
+				var ut="https://twitter.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
+				var ug="https://plus.google.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
+				var up="https://www.pinterest.com/pin/create/button/?url="+"https://adalab.github.io/clarke-s2-scriptoras";
+				var ul="https://www.linkedin.com/shareArticle?mini=true&url="+"https://adalab.github.io/clarke-s2-scriptoras";
+				var uw="whatsapp://share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
+			</script>
+			<a href="javascript:void(0);" onclick="window.open(us,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Slack">
+				<img alt="Compartir en slack" class="sl" height="40" src="https://i.pinimg.com/originals/5c/49/e7/5c49e71075941267cfaf5eb2700e7049.png" title="Compartir en slack" width="40" />
+			</a>
+			<a href="javascript:void(0);" onclick="window.open(uf,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Facebook">
+				<img alt="Compartir en facebook" class="fb" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/facebook-long.png" title="Compartir en facebook" width="40" />
+			</a>
+			<a href="javascript:void(0);" onclick="window.open(ug,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Google+">
+				<img alt="Compartir en google+" class="glg" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/google-long.png" title="Compartir en google+" width="40" />
+			</a>
+			<a href="javascript:void(0);" onclick="window.open(ut,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Twitter">
+				<img alt="Compartir en twitter" class="twtr" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/twitter-long.png" title="Compartir en twitter" width="40" />
+			</a>
+			<a href="javascript:void(0);" onclick="window.open(up,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Pinterest">
+				<img alt="Compartir en pinterest" class="pnt" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/pinterest-long.png" title="Compartir en pinterest" width="40" />
+			</a>
+			<a href="javascript:void(0);" onclick="window.open(ul,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en linkedin+">
+				<img alt="Compartir en likedin" class="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/linkedin-long.png" title="Compartir en Likedin" width="40" />
+			</a>
+			<a href="javascript:void(0);" data-action=”share/whatsapp/share” onclick="window.open(uw,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en WhatsApp+">
+				<img alt="Compartir en WhatsApp " class="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/whatsapp-long.png" title="Compartir en WhatsApp " width="40" />
+			</a>
+		</div>
+		<footer class="infooter">
 			<div class="end"><h3>Scriptoras &copy; 2017</h3></div>
 			<div class="end">
 				<p><a class="contacto" href="contact.html">Contacta con nosotras</a></p>
-		  </div>
-		  <div class="logo">
-			  <a href="http://adalab.es/" target="blank">
-				  <img src="images/logo-adalab.png" alt="Logo Adalab" class="logoadalab">
-			  </a>
-		  </div>
-      <a id="arriba" title="Arriba" class="invisible">
-    		<img src="images/arriba.png" title="Arriba" alt="Arriba">
-    	</a>
-	  </footer>
-	  <!-- End Footer-->
+			</div>
+			<div class="logo">
+				<a href="http://adalab.es/" target="blank">
+					<img src="images/logo-adalab.png" alt="Logo Adalab" class="logoadalab">
+				</a>
+			</div>
+			<a id="arriba" title="Arriba" class="invisible">
+				<img src="images/arriba.png" title="Arriba" alt="Arriba">
+			</a>
+		</footer>
+		<!-- End Footer-->
 		<!-- JavaScript Code -->
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/qrcode.js"></script>
-  </body>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/qrcode.js"></script>
+	</body>
 </html>
